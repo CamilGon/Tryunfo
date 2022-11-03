@@ -6,14 +6,15 @@ class App extends React.Component {
   state = {
     cardName: '',
     cardDescription: '',
-    cardAttr1: '',
-    cardAttr2: '',
-    cardAttr3: '',
+    cardAttr1: '0',
+    cardAttr2: '0',
+    cardAttr3: '0',
     cardImage: '',
     cardRare: '',
     cardTrunfo: false,
     hasTrunfo: false,
     isSaveButtonDisabled: false,
+    cards: [],
   };
 
   validFom = () => {
@@ -57,6 +58,41 @@ class App extends React.Component {
     this.setState({
       [name]: value,
     }, this.validFom);
+  };
+
+  onSaveButtonClick = () => {
+    console.log();
+    const {
+      cardName,
+      cardImage,
+      cardDescription,
+      cardRare,
+      cardAttr1,
+      cardAttr2,
+      cardAttr3,
+      cardTrunfo,
+    } = this.state;
+    const newObject = {
+      cardName,
+      cardImage,
+      cardDescription,
+      cardRare,
+      cardAttr1,
+      cardAttr2,
+      cardAttr3,
+      cardTrunfo,
+    };
+    this.setState(({ cards }) => ({
+      cards: [...cards, newObject],
+      cardName: '',
+      cardDescription: '',
+      cardAttr1: '0',
+      cardAttr2: '0',
+      cardAttr3: '0',
+      cardImage: '',
+      cardRare: '',
+      cardTrunfo: false,
+    }));
   };
 
   render() {
