@@ -10,7 +10,7 @@ class App extends React.Component {
     cardAttr2: '',
     cardAttr3: '',
     cardImage: '',
-    cardRare: '',
+    cardRare: 'normal',
     cardTrunfo: false,
     hasTrunfo: false,
     isSaveButtonDisabled: false,
@@ -86,13 +86,13 @@ class App extends React.Component {
       cards: [...cards, newObject],
       cardName: '',
       cardDescription: '',
-      cardAttr1: '',
-      cardAttr2: '',
-      cardAttr3: '',
+      cardAttr1: '0',
+      cardAttr2: '0',
+      cardAttr3: '0',
       cardImage: '',
       cardRare: '',
       cardTrunfo: false,
-    }), this.hasTrunfo);
+    }));
   };
 
   render() {
