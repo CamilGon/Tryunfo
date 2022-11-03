@@ -19,6 +19,7 @@ class Form extends React.Component {
     return (
       <form>
         <label htmlFor="name">
+          Nome:
           <input
             name="cardName"
             data-testid="name-input"
@@ -28,6 +29,7 @@ class Form extends React.Component {
           />
         </label>
         <label htmlFor="description">
+          Descrião:
           <input
             name="cardDescription"
             data-testid="description-input"
@@ -37,6 +39,7 @@ class Form extends React.Component {
           />
         </label>
         <label htmlFor="attr1">
+          Attr1:
           <input
             name="cardAttr1"
             data-testid="attr1-input"
@@ -46,6 +49,7 @@ class Form extends React.Component {
           />
         </label>
         <label htmlFor="attr2">
+          attr2:
           <input
             name="cardAttr2"
             data-testid="attr2-input"
@@ -55,6 +59,7 @@ class Form extends React.Component {
           />
         </label>
         <label htmlFor="attr3">
+          Attr3
           <input
             name="cardAttr3"
             data-testid="attr3-input"
@@ -64,6 +69,7 @@ class Form extends React.Component {
           />
         </label>
         <label htmlFor="image">
+          Imagem:
           <input
             name="cardImage"
             data-testid="image-input"
@@ -73,6 +79,7 @@ class Form extends React.Component {
           />
         </label>
         <label htmlFor="rare">
+          Raridade:
           <select
             name="cardRare"
             data-testid="rare-input"
@@ -86,6 +93,7 @@ class Form extends React.Component {
           </select>
         </label>
         <label htmlFor="trunfo">
+          Trunfo:
           <input
             name="cardTrunfo"
             type="checkbox"
